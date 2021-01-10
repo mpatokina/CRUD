@@ -144,7 +144,6 @@ class Wines extends React.Component {
                   { wine.name }: price { wine.price } 
                   <button onClick={ () => this.handleDelete(wine.id) }>Delete wine</button>
                   <button onClick={ () => this.selectWine(wine) }>Edit wine</button>
-                  <button>useless</button>
                 </li>
               ))
             }
@@ -327,7 +326,6 @@ class People extends App {
               { person.firstname } { person.lastname }: username { person.username }
               <button onClick= { () => this.handleDelete(person.id) }>Delete person</button>
               <button onClick={ () => this.selectPerson(person) }>Edit person</button>
-              <button>useless</button>
               </li>
               ))      
             }
@@ -481,8 +479,7 @@ class Books extends App {
             <li key={ book.id }>
               { book.title }: author { book.author } 
               <button onClick= { () => this.handleDelete(book.id) }>Delete book</button>
-              <button onClick={ () => this.selectBook(book) }>Edit book</button>
-              <button>useless</button>              
+              <button onClick={ () => this.selectBook(book) }>Edit book</button>           
               </li>
               ))      
             }
